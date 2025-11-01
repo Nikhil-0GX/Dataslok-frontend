@@ -1,0 +1,22 @@
+{
+  "name": "data-alchemist-frontend",
+  "version": "1.0.0",
+  "description": "The Data Alchemist - AI-driven gamified data cleaning platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "shared"
+  ],
+  "scripts": {
+    "dev:portal": "npm run dev --workspace=apps/contributor-portal",
+    "dev:game": "npm run dev --workspace=apps/player-game",
+    "build:portal": "npm run build --workspace=apps/contributor-portal",
+    "build:game": "npm run build --workspace=apps/player-game",
+    "build:all": "npm run build:portal && npm run build:game",
+    "preview:portal": "npm run preview --workspace=apps/contributor-portal",
+    "preview:game": "npm run preview --workspace=apps/player-game"
+  },
+  "keywords": ["data-cleaning", "AI", "gamification", "React", "Firebase"],
+  "author": "Data Alchemist Team",
+  "license": "MIT"
+}
